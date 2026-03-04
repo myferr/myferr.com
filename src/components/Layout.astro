@@ -1,0 +1,19 @@
+---
+const { title = "Astro", description = "" } = Astro.props;
+import "../styles/global.css";
+---
+
+<html lang="en" class="bg-black text-white/50">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+  </head>
+  <body class="min-h-screen flex items-center justify-center">
+    <slot />
+  </body>
+</html>
