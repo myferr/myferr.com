@@ -1,0 +1,7 @@
+---
+import type { LinkComponent } from "./types";
+
+const { href }: LinkComponent = Astro.props as LinkComponent;
+---
+
+<a href={href} class="font-medium underline duration-200 hover:text-white/70" target="_blank" rel="noopener noreferrer"><slot /></a>
