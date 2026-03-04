@@ -1,17 +1,14 @@
 ---
-
+import Layout from "../components/Layout.astro";
+import Link from "../components/Link.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Home">
+  <main>
+	<h1 class="text-xl text-white/70">I'm Myferr</h1>
+	<hr class="my-4 border-white/10" />
+	<p>I'm a software engineer and a web developer based in Florida.</p>
+	<p>I'm currently building cool stuff over at <Link href="https://github.com/use-solace">Solace</Link> and <Link href="https://github.com/tropicaloss">tropical</Link>.</p>
+	<p>Pretty much everything I do is on <Link href="https://github.com/myferr">GitHub</Link>.</p>
+  </main>
+</Layout>
